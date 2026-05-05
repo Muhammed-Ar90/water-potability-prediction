@@ -79,10 +79,10 @@ The model is evaluated using:
 - Recall  
 - F1 Score  
 
-• Test Accuracy: 99%
-• Precision: 0.97- (The accuracy of the model when it predicts water is potable).
-• Recall: 1.0 -(The model's ability to correctly identify all truly potable water samples).
-• F1-Score: 0.98- (The balanced score between Precision and Recall, critical for imbalanced data).
+- Test Accuracy: 99%
+- Precision: 0.97- (The accuracy of the model when it predicts water is potable).
+- Recall: 1.0 -(The model's ability to correctly identify all truly potable water samples).
+- F1-Score: 0.98- (The balanced score between Precision and Recall, critical for imbalanced data).
 
 ---
 
