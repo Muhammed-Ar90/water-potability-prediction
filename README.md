@@ -1,7 +1,7 @@
-# 🚰 Water Potability Prediction — Machine Learning Project
+# 🚰 Water Potability Prediction using Machine Learning
 
-An end-to-end machine learning project that predicts whether water is safe for drinking using physicochemical properties.  
-The primary focus is on **data preprocessing, model development, evaluation, and reproducibility**.
+A machine learning project that predicts whether water is safe for drinking based on physicochemical properties.  
+This project covers an end-to-end pipeline including data preprocessing, model training, evaluation, and deployment for real-time predictions.
 
 ---
 
@@ -32,13 +32,19 @@ based on measured water quality parameters.
 
 ---
 
-## 🧪 Dataset
+## 📂 Dataset
 
-The dataset consists of multiple chemical and physical features of water samples:
+The dataset used in this project is the **Water Potability Dataset**, commonly available on Kaggle.
+
+It contains water quality measurements for different samples, along with a target variable indicating whether the water is safe for drinking.
+
+### 📊 Features
+
+The dataset includes the following 9 input features:
 
 - pH  
 - Hardness  
-- Total Dissolved Solids (TDS)  
+- Solids (Total Dissolved Solids - TDS)  
 - Chloramines  
 - Sulfate  
 - Conductivity  
@@ -46,14 +52,19 @@ The dataset consists of multiple chemical and physical features of water samples
 - Trihalomethanes  
 - Turbidity  
 
+### 🔗 Source
+
+Dataset: https://www.kaggle.com/datasets/developerghost/water-potability
+
 ---
 
-## 🔧 Data Preprocessing
+## 🔄 ML Pipeline
 
-- Missing value handling (mean/median imputation)  
-- Feature scaling using **StandardScaler**  
-- Data consistency checks  
-- Feature alignment for model input  
+1. Data preprocessing (handling missing values, feature scaling using StandardScaler)
+2. Model training using Gradient Boosting Classifier
+3. Hyperparameter tuning (to optimize model performance)
+4. Evaluation using classification metrics (Accuracy, Precision, Recall, F1 Score)
+5. Deployment using Streamlit for real-time inference
 
 ---
 
@@ -77,12 +88,16 @@ The model is evaluated using:
 - Accuracy  
 - Precision  
 - Recall  
-- F1 Score  
+- F1 Score
+  
 ---
-- Test Accuracy: 99%
+
+## 📊 Model Performance
+
+- Accuracy: 99%
 - Precision: 0.97- (The accuracy of the model when it predicts water is potable).
 - Recall: 1.0 -(The model's ability to correctly identify all truly potable water samples).
-- F1-Score: 0.98- (The balanced score between Precision and Recall, critical for imbalanced data).
+- F1 Score: 0.98- (The balanced score between Precision and Recall, critical for imbalanced data).
 
 ---
 
